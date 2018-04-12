@@ -1,0 +1,84 @@
+﻿testinfo:
+    - id: MainUI_make_a_note
+      title: 主页面_记一笔
+      info: 无
+testcase:      
+    - element_info: com.mymoney:id/add_expense_quickly_btn
+      find_type: id
+      operate_type: click
+      test_intr: 记一笔
+      info: 1、主菜单点击记一笔
+    - element_info: com.mymoney:id/nine
+      find_type: id
+      operate_type: click
+      info: 2、点击数字9（输入金额95）
+    - element_info: com.mymoney:id/five
+      find_type: id
+      operate_type: click
+      info: 3、点击数字5 （输入金额95）
+    - element_info: com.mymoney:id/tab_ok_btn
+      find_type: id
+      operate_type: click
+      info: 4、收起数字键盘
+
+#    - element_info: com.mymoney:id/memo_et
+#      find_type: id
+#      operate_type: press_keycode
+#      code: 4
+#      info: 点击返回键
+
+    - element_info: //android.widget.LinearLayout[@resource-id='com.mymoney:id/category_item_ly']
+      find_type: xpath
+      operate_type: click
+      info: 5、点击分类
+    - element_info: //android.widget.LinearLayout[@resource-id='com.mymoney:id/category_item_ly']
+      find_type: xpath
+      coordinate: 168,1105
+      operate_type: tap
+      info: 6、修改分类主类
+      is_time: 2
+    - element_info: //android.widget.LinearLayout[@resource-id='com.mymoney:id/category_item_ly']
+      find_type: xpath
+      coordinate: 530,1075
+      operate_type: tap
+      info: 7、修改分类子类
+      is_time: 2
+    - element_info: com.mymoney:id/memo_et
+      find_type: id
+      operate_type: click
+      info: 8、点击备注
+    - element_info: com.mymoney:id/memo_et
+      find_type: id
+      operate_type: set_value
+      msg:  请同事吃工作餐
+      info: 9、填写备注信息（请同事吃工作餐）
+
+#    - element_info: com.mymoney:id/category_item_ly
+#      find_type: ids
+#      index: 2
+#      operate_type: click
+#      info: 4、点击账户
+
+
+
+    - element_info: com.mymoney:id/save_btn
+      find_type: id
+      operate_type: click
+      info: 10、点击保存
+    - element_info: //android.widget.RelativeLayout/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]
+      find_type: xpath
+      operate_type: click
+      info: 11、点击今天记账
+    #- element_info: //android.support.v7.widget.RecyclerView[@resource-id='com.mymoney:id/recycler_view']/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]
+    - element_info: //android.support.v7.widget.RecyclerView[@resource-id='com.mymoney:id/recycler_view']/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]
+      find_type: xpath
+      operate_type: click
+      info: 12、点击最后一笔
+      is_time: 2
+check:
+    - element_info: com.mymoney:id/cost_btn
+      find_type: id
+      operate_type: get_value
+      value: ‘95.00’
+      info: 判定95是否存在
+      check_time: 5

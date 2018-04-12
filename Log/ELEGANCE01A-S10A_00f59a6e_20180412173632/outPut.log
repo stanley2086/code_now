@@ -1,0 +1,9 @@
+2018-04-12 17:36:50,795  - INFO - ----  MainUI_make_a_note_主页面_记一笔_com.mymoney:id/add_expense_quickly_btn_click     Start     ----
+2018-04-12 17:36:52,276  - INFO - ----  MainUI_make_a_note_主页面_记一笔_com.mymoney:id/nine_click     Start     ----
+2018-04-12 17:36:52,988  - INFO - ----  MainUI_make_a_note_主页面_记一笔_com.mymoney:id/five_click     Start     ----
+2018-04-12 17:36:53,874  - INFO - ----  MainUI_make_a_note_主页面_记一笔_com.mymoney:id/tab_ok_btn_click     Start     ----
+2018-04-12 17:36:54,671  - INFO - ----  MainUI_make_a_note_主页面_记一笔_//android.widget.LinearLayout[@resource-id='com.mymoney:id/category_item_ly']_click     Start     ----
+2018-04-12 17:36:55,622  - INFO - ----  MainUI_make_a_note_主页面_记一笔_//android.widget.LinearLayout[@resource-id='com.mymoney:id/category_item_ly']_tap     Start     ----
+2018-04-12 17:36:56,385  - INFO - ----  MainUI_make_a_note_主页面_记一笔_//android.widget.LinearLayout[@resource-id='com.mymoney:id/category_item_ly']_tap     Start     ----
+2018-04-12 17:36:56,611  - INFO - ----  MainUI_make_a_note_主页面_记一笔_com.mymoney:id/memo_et_click     Start     ----
+2018-04-12 17:36:57,954  - INFO - ----  MainUI_make_a_note_主页面_记一笔_com.mymoney:id/memo_et_set_value 请同事吃工作餐   Start     ----

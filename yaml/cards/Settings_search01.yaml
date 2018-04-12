@@ -1,0 +1,51 @@
+﻿testinfo:
+    - id: settings-search01
+      title: 设置-搜索-reset-预重置
+      info: 无
+testcase:      
+    - element_info: com.android.settings:id/search
+      find_type: id
+      operate_type: click
+      test_intr: 搜索
+      info: 1、设置一级菜单，点击搜索按钮
+    - element_info: android:id/search_src_text
+      find_type: id
+      operate_type: set_value
+      msg: reset
+      info: 2、输入字符串"reset"
+      is_time: 1
+    - element_info: //android.widget.TextView[@resource-id='com.android.settings:id/title' and @text='Backup & reset']
+      find_type: xpath
+      operate_type: click
+      info: 3、在搜索结果待选区域，选择Back&reset
+    - element_info: //android.widget.TextView[@text='Factory data reset']
+      find_type: xpath
+      operate_type: click
+      info: 4、点击Back&reset界面最后的选项：Factory data reset
+    - element_info: com.android.settings:id/initiate_master_clear
+      find_type: id
+      operate_type: press_keycode
+      code: 4
+      info: 点击返回键
+    - element_info: //android.widget.TextView[@text='Factory data reset']
+      find_type: xpath
+      operate_type: click
+      info: 4、点击Back&reset界面最后的选项：Factory data reset
+#    - element_info: com.android.settings:id/initiate_master_clear
+#      find_type: id
+#      coordinate: 168,1105
+#      operate_type: tap
+#      info: 5、点击分类主类
+    - element_info: com.android.settings:id/initiate_master_clear
+      find_type: id
+      operate_type: click
+      info: 5：点击 RESET PHONE （介绍reset风险页面）
+      is_time: 1
+
+check:
+    - element_info: com.android.settings:id/execute_master_clear
+      find_type: id
+      operate_type: get_value
+      value: ERASE EVERYTHING
+      info: 判定erase everything按钮是否存在
+      check_time: 3
